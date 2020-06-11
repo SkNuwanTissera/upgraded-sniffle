@@ -46,8 +46,6 @@ grant all on gwregdb.* TO 'root'@'%' identified by 'root';
 create database gwactivitydb;
 grant all on gwactivitydb.* TO 'root'@'%' identified by 'root';
 
+use gwregdb;
 source /home/nuwan/code/wso2telcohub-3.1.0/dbscripts/dep-hub/mysql/manageapp_permission_tree.sql;
 grant all on gwactivitydb.* TO 'root'@'%' identified by 'root';
-
-home/nuwan/code/wso2telcohub-3.1.0/
-
