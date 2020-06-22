@@ -5,7 +5,7 @@ DROP DATABASE IF EXISTS prodratedb;
 DROP DATABASE IF EXISTS prodstatdb;
 DROP DATABASE IF EXISTS produserdb;
 DROP DATABASE IF EXISTS prodregdb;
-DROP DATABASE IF EXISTS activiti;
+DROP DATABASE IF EXISTS prodactiviti;
 
 
 create database prodapimgtdb;
@@ -43,8 +43,8 @@ use prodregdb;
 source /home/nuwan/pack/RC5 INTGW/wso2telcohub-4.1.0-SNAPSHOT/dbscripts/mysql5.7.sql;
 grant all on prodregdb.* TO 'root'@'%' identified by 'root';
 
-create database activiti;
-grant all on activiti.* TO 'root'@'%' identified by 'root';
+create database prodactiviti;
+grant all on prodactiviti.* TO 'root'@'%' identified by 'root';
 
 source /home/nuwan/pack/RC5 INTGW/wso2telcohub-4.1.0-SNAPSHOT/dbscripts/dep-hub/mysql/manageapp_permission_tree.sql;
 grant all on prodactiviti.* TO 'root'@'%' identified by 'root';
